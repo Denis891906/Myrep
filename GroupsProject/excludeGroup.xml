@@ -1,0 +1,23 @@
+<suite name="Suite Test" verbose="1">
+	<test name="Test Include group">
+		<groups>
+			<run >
+				<include name="group-include" />
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.ExcludeGroup" />
+		</classes>
+	</test>
+	<test name="Test Exclude group">
+		<groups>
+			<run >
+				<include name="group-include" />
+				<exclude name="group-exclude" /> 
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.ExcludeGroup" />
+		</classes>
+	</test>
+</suite>

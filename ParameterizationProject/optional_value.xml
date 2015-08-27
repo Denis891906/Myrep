@@ -1,0 +1,13 @@
+<suite name="Optional Value" verbose="1">
+	<test name="First test">
+		<classes>
+			<class name="test.OptionalTest"/>
+		</classes>
+	</test>
+	<test name="Second test">
+		<parameter name="optional value" value="Value from xml"/>
+		<classes>
+			<class name="test.OptionalTest"/>	
+		</classes>
+	</test>
+</suite>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Class Suite" duration-ms="37" started-at="2015-07-16T17:40:41Z" finished-at="2015-07-16T17:40:41Z">
+    <groups>
+    </groups>
+    <test name="Test" duration-ms="37" started-at="2015-07-16T17:40:41Z" finished-at="2015-07-16T17:40:41Z">
+      <class name="test.second.FirstTestClass">
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:test.second.FirstTestClass@3930015a]" name="firstTest" duration-ms="1" started-at="2015-07-16T20:40:41Z" finished-at="2015-07-16T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+      </class> <!-- test.second.FirstTestClass -->
+      <class name="test.firstpackage.FirstTestClass">
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:test.firstpackage.FirstTestClass@4c75cab9]" name="firstTest" duration-ms="15" started-at="2015-07-16T20:40:41Z" finished-at="2015-07-16T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+      </class> <!-- test.firstpackage.FirstTestClass -->
+      <class name="thirdpackage.FirstTestClass">
+        <test-method status="PASS" signature="firstTest()[pri:0, instance:thirdpackage.FirstTestClass@629f0666]" name="firstTest" duration-ms="1" started-at="2015-07-16T20:40:41Z" finished-at="2015-07-16T20:40:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- firstTest -->
+      </class> <!-- thirdpackage.FirstTestClass -->
+    </test> <!-- Test -->
+  </suite> <!-- Class Suite -->
+</testng-results>

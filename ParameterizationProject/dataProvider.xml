@@ -1,0 +1,7 @@
+<suite name="DataProvider test Suite" verbose="1">
+	<test name="DataProvoder Test">
+		<classes>
+			<class name="test.dataprovider.SameClaseDataProvider"/>
+		</classes>
+	</test>
+</suite>

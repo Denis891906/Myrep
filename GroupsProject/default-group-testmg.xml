@@ -1,0 +1,24 @@
+<suite name="Suite" verbise="1">
+	<test name="Test 1">
+		<groups >
+			<run >
+				<include name="dafault-group"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.defaultGroup" />
+		</classes>
+	</test>
+	<test name="Test 2">
+		<groups >
+			<run >
+				<include name="test-group"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.defaultGroup" />
+		</classes>
+	
+	</test>
+
+</suite>

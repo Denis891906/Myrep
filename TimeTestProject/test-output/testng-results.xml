@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="976" started-at="2015-07-20T17:26:38Z" finished-at="2015-07-20T17:26:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="976" started-at="2015-07-20T17:26:38Z" finished-at="2015-07-20T17:26:39Z">
+      <class name="test.timetest.TimeMethod">
+        <test-method status="FAIL" signature="timeTestOne()[pri:0, instance:test.timetest.TimeMethod@33cb5951]" name="timeTestOne" duration-ms="523" started-at="2015-07-20T20:26:38Z" finished-at="2015-07-20T20:26:38Z">
+          <exception class="org.testng.internal.thread.ThreadTimeoutException">
+            <message>
+              <![CDATA[Method org.testng.internal.TestNGMethod.timeTestOne() didn't finish within the time-out 500]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.thread.ThreadTimeoutException: Method org.testng.internal.TestNGMethod.timeTestOne() didn't finish within the time-out 500
+	at org.testng.internal.InvokeMethodRunnable.runOne(InvokeMethodRunnable.java:57)
+	at org.testng.internal.InvokeMethodRunnable.run(InvokeMethodRunnable.java:37)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.thread.ThreadTimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeTestOne -->
+        <test-method status="PASS" signature="timeTestTwo()[pri:0, instance:test.timetest.TimeMethod@33cb5951]" name="timeTestTwo" duration-ms="415" started-at="2015-07-20T20:26:38Z" finished-at="2015-07-20T20:26:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- timeTestTwo -->
+      </class> <!-- test.timetest.TimeMethod -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

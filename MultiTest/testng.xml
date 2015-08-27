@@ -1,0 +1,14 @@
+<suite name="Suit-1" verbose="1">
+	<test name="One Test">
+		<classes>
+			<class name="test.FirstTest" />
+			<class name="test.SecondClass" />
+		</classes>
+	</test>
+	<test name="ThirdTest">
+		<classes>
+			<class name="test.ThirdClass"/>
+		</classes>
+	</test>
+
+</suite>

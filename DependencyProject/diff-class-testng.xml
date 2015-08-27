@@ -1,0 +1,7 @@
+<suite name="Suite 1" vervbose="1">
+	<test name="First test" >
+		<packages>
+			<package name="test.depends.groups"/>
+		</packages>
+	</test>
+</suite>

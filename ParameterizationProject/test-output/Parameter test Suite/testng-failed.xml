@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Parameter test Suite]">
+  <parameter name="test-three-param" value="test three parameter"/>
+  <parameter name="suite-param" value="Overriden suite parameter"/>
+  <parameter name="test-two-param" value="Test Two parameter"/>
+  <test name="Parameter test 2(failed)">
+    <parameter name="test-two-param" value="Test Two parameter"/>
+    <classes>
+      <class name="test.ParameterTest">
+        <methods>
+          <include name="parameterTestThree"/>
+        </methods>
+      </class> <!-- test.ParameterTest -->
+    </classes>
+  </test> <!-- Parameter test 2(failed) -->
+  <test name="parameter test 3(failed)">
+    <parameter name="test-three-param" value="test three parameter"/>
+    <parameter name="suite-param" value="Overriden suite parameter"/>
+    <classes>
+      <class name="test.ParameterTest">
+        <methods>
+          <include name="parametertestTwo"/>
+        </methods>
+      </class> <!-- test.ParameterTest -->
+    </classes>
+  </test> <!-- parameter test 3(failed) -->
+</suite> <!-- Failed suite [Parameter test Suite] -->

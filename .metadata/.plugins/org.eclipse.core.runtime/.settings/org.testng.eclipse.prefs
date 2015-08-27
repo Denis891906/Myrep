@@ -1,0 +1,5 @@
+MultiTest.outdir=/test-output
+MultiTest.useProjectJar=true
+TimeTestProject.outdir=/test-output
+TimeTestProject.useProjectJar=true
+eclipse.preferences.version=1

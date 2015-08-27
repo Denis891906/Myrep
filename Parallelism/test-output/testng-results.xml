@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Parallel tests" duration-ms="34" started-at="2015-07-28T06:23:49Z" finished-at="2015-07-28T06:23:49Z">
+    <groups>
+    </groups>
+    <test name="Test One" duration-ms="34" started-at="2015-07-28T06:23:49Z" finished-at="2015-07-28T06:23:49Z">
+      <class name="test.parallelism.SampleTestSuite">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.parallelism.SampleTestSuite@47d384ee]" name="beforeTest" is-config="true" duration-ms="13" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test One]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.parallelism.SampleTestSuite@47d384ee]" name="beforeClass" is-config="true" duration-ms="0" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:test.parallelism.SampleTestSuite@47d384ee]" name="testMethodOne" duration-ms="5" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.parallelism.SampleTestSuite@47d384ee]" name="afterClass" is-config="true" duration-ms="0" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.parallelism.SampleTestSuite@47d384ee]" name="afterTest" is-config="true" duration-ms="1" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- test.parallelism.SampleTestSuite -->
+    </test> <!-- Test One -->
+    <test name="Test Two" duration-ms="34" started-at="2015-07-28T06:23:49Z" finished-at="2015-07-28T06:23:49Z">
+      <class name="test.parallelism.SampleTestSuite">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:test.parallelism.SampleTestSuite@34033bd0]" name="beforeTest" is-config="true" duration-ms="12" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test two]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.parallelism.SampleTestSuite@34033bd0]" name="beforeClass" is-config="true" duration-ms="1" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:test.parallelism.SampleTestSuite@34033bd0]" name="testMethodOne" duration-ms="6" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.parallelism.SampleTestSuite@34033bd0]" name="afterTest" is-config="true" duration-ms="1" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.parallelism.SampleTestSuite@34033bd0]" name="afterClass" is-config="true" duration-ms="0" started-at="2015-07-28T09:23:49Z" finished-at="2015-07-28T09:23:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- test.parallelism.SampleTestSuite -->
+    </test> <!-- Test Two -->
+  </suite> <!-- Parallel tests -->
+</testng-results>

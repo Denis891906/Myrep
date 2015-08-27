@@ -1,0 +1,23 @@
+<suite name="Suite One" verbose="1">
+	<test name="One test">
+		<groups>
+			<run>
+				<include name="group-one"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.MultiGroup"/>
+		</classes>
+	</test>
+	<test name="Two test">
+		<groups>
+			<run>
+				<include name="group-two"/>
+			</run>
+		</groups>
+		<classes>
+			<class name="test.groups.MultiGroup"/>
+		</classes>
+	</test>
+	
+</suite>

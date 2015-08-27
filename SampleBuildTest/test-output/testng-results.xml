@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite First" duration-ms="31" started-at="2015-08-03T16:50:10Z" finished-at="2015-08-03T16:50:10Z">
+    <groups>
+    </groups>
+    <test name="First test" duration-ms="31" started-at="2015-08-03T16:50:10Z" finished-at="2015-08-03T16:50:10Z">
+      <class name="test.SampleBuildTest">
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:test.SampleBuildTest@12bc6874]" name="testMethodOne" duration-ms="13" started-at="2015-08-03T19:50:10Z" finished-at="2015-08-03T19:50:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodOne -->
+        <test-method status="PASS" signature="testMethodTwo()[pri:0, instance:test.SampleBuildTest@12bc6874]" name="testMethodTwo" duration-ms="0" started-at="2015-08-03T19:50:10Z" finished-at="2015-08-03T19:50:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodTwo -->
+      </class> <!-- test.SampleBuildTest -->
+    </test> <!-- First test -->
+  </suite> <!-- Suite First -->
+</testng-results>

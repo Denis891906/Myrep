@@ -1,0 +1,7 @@
+<suite name="Suite First" verbose="1" >
+	<test name="Login test to PDC">
+		<classes >
+			<class name="test.Test1"></class>
+		</classes>
+	</test>
+</suite>

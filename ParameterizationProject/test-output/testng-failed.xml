@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [DataProvider test Suite]">
+  <test name="DataProvoder Test(failed)">
+    <classes>
+      <class name="test.dataprovider.SameClaseDataProvider">
+        <methods>
+          <include name="testMethod"/>
+        </methods>
+      </class> <!-- test.dataprovider.SameClaseDataProvider -->
+    </classes>
+  </test> <!-- DataProvoder Test(failed) -->
+</suite> <!-- Failed suite [DataProvider test Suite] -->

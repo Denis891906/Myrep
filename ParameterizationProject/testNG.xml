@@ -1,0 +1,25 @@
+<suite name="Parameter test Suite" verbose="1">
+	<parameter name="suite-param" value="suite level parameter" />
+	<test name="Parameter Test One">
+		<classes>
+			<class name="test.ParameterTest">
+				<methods>
+					  <include name="parameterTestOne"/>	
+				</methods>
+			</class>		
+		</classes>
+	</test>
+	<test name="Parameter test 2">
+		<parameter name="test-two-param" value="Test Two parameter"/> 
+			<classes>
+				<class name="test.ParameterTest"/>	
+			</classes>	
+	</test>
+	<test name="parameter test 3">
+		<parameter name="suite-param" value="Overriden suite parameter"/>
+		<parameter name="test-three-param" value="test three parameter"/>
+		<classes>
+			<class name="test.ParameterTest"/>
+		</classes>
+	</test>
+</suite>

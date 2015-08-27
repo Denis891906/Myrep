@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;SampleBuildTest/prom.xml&apos; to &apos;pom.xml&apos;" description="Rename resource &apos;prom.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="prom.xml" name="pom.xml" stamp="1438664868265" updateReferences="true"/>
+</session>

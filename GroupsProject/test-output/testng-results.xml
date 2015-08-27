@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="70" started-at="2015-07-23T16:45:21Z" finished-at="2015-07-23T16:45:21Z">
+    <groups>
+      <group name="dafault-group">
+        <method signature="defaultGroup.testMethodOne()[pri:0, instance:test.groups.defaultGroup@4c75cab9]" name="testMethodOne" class="test.groups.defaultGroup"/>
+      </group> <!-- dafault-group -->
+      <group name="test-group">
+        <method signature="defaultGroup.testMethodThree()[pri:0, instance:test.groups.defaultGroup@61443d8f]" name="testMethodThree" class="test.groups.defaultGroup"/>
+      </group> <!-- test-group -->
+    </groups>
+    <test name="Test 1" duration-ms="27" started-at="2015-07-23T16:45:21Z" finished-at="2015-07-23T16:45:21Z">
+      <class name="test.groups.defaultGroup">
+        <test-method status="PASS" signature="testMethodOne()[pri:0, instance:test.groups.defaultGroup@4c75cab9]" name="testMethodOne" duration-ms="11" started-at="2015-07-23T19:45:21Z" finished-at="2015-07-23T19:45:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodOne -->
+      </class> <!-- test.groups.defaultGroup -->
+    </test> <!-- Test 1 -->
+    <test name="Test 2" duration-ms="2" started-at="2015-07-23T16:45:21Z" finished-at="2015-07-23T16:45:21Z">
+      <class name="test.groups.defaultGroup">
+        <test-method status="PASS" signature="testMethodThree()[pri:0, instance:test.groups.defaultGroup@61443d8f]" name="testMethodThree" duration-ms="1" started-at="2015-07-23T19:45:21Z" finished-at="2015-07-23T19:45:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMethodThree -->
+      </class> <!-- test.groups.defaultGroup -->
+    </test> <!-- Test 2 -->
+  </suite> <!-- Suite -->
+</testng-results>
