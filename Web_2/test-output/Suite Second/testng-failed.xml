@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite Second]">
+  <test name="Login test to PDC(failed)">
+    <classes>
+      <class name="test.Test1">
+        <methods>
+          <include name="test1"/>
+          <include name="CreateWebDriver"/>
+          <include name="test2"/>
+          <include name="test3"/>
+        </methods>
+      </class> <!-- test.Test1 -->
+    </classes>
+  </test> <!-- Login test to PDC(failed) -->
+</suite> <!-- Failed suite [Suite Second] -->

@@ -1,0 +1,11 @@
+package test;
+
+import org.testng.annotations.BeforeTest;
+
+public class test {
+	@BeforeTest
+	public void Before(){
+		System.out.print("Hello");
+	}
+
+}

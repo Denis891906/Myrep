@@ -8312,3 +8312,542 @@ java.lang.NullPointerException
 
 !ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2015-08-26 19:04:09.387
 !MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+!SESSION 2015-08-31 19:13:44.171 -----------------------------------------------
+eclipse.buildId=4.5.0.I20150603-2000
+java.version=1.8.0_45
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.net 1 0 2015-08-31 19:14:02.241
+!MESSAGE System property http.proxyHost is not set but should be kiev-tmg-vas.kiev.luxoft.com.
+
+!ENTRY org.eclipse.core.net 1 0 2015-08-31 19:14:02.264
+!MESSAGE System property http.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2015-08-31 19:14:02.266
+!MESSAGE System property https.proxyHost is not set but should be kiev-tmg-vas.kiev.luxoft.com.
+
+!ENTRY org.eclipse.core.net 1 0 2015-08-31 19:14:02.266
+!MESSAGE System property https.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.core.net 1 0 2015-08-31 19:14:02.271
+!MESSAGE System property https.proxyHost is not set but should be kiev-tmg-vas.kiev.luxoft.com.
+
+!ENTRY org.eclipse.core.net 1 0 2015-08-31 19:14:02.271
+!MESSAGE System property https.proxyPort is not set but should be 8080.
+
+!ENTRY org.eclipse.egit.ui 2 0 2015-08-31 19:14:19.695
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'U:\'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 1 4 2015-08-31 19:14:30.633
+!MESSAGE The error reporting server is not available. Error reporting will be disabled until next restart. Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:126)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.CheckServerAvailabilityJob.run(CheckServerAvailabilityJob.java:53)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 4 32 2015-08-31 19:14:30.794
+!MESSAGE Failed to do network communication. Please file a bug with the EPP Logging project (https://bugs.eclipse.org/bugs/enter_bug.cgi?product=EPP&component=logging) along with any information you can provide us with regarding your network settings. Please include the following information which will help us fix this issue: 
+Communication URL: http://download.eclipse.org/stats/technology/epp/logging/network-communication-test/apache/java-1.8.0_45/Windows+7-6.1/Manual-Negotiate;Kerberos;NTLM;Basic/proxyHost/proxyUsername-proxyPassword/
+Response Code: 407 - Proxy Authentication Required ( Forefront TMG requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  )
+Response Headers:
+Via: 1.1 KIEV-TMG-04
+Proxy-Authenticate: Negotiate
+Proxy-Authenticate: Kerberos
+Proxy-Authenticate: NTLM
+Proxy-Authenticate: Basic realm="KIEV-TMG-04.kiev.luxoft.com"
+Connection: close
+Proxy-Connection: close
+Pragma: no-cache
+Cache-Control: no-cache
+Content-Type: text/html
+Content-Length: 4133
+ Version: 1.0.0.v20150617-0732
+!STACK 0
+org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs$LogTraceException.newTrace(Logs.java:382)
+	at org.eclipse.epp.internal.logging.aeri.ui.l10n.Logs.log(Logs.java:134)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.NetworkCommunicationTestJob.doApacheHeadRequest(NetworkCommunicationTestJob.java:155)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.NetworkCommunicationTestJob.run(NetworkCommunicationTestJob.java:88)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:15:02.256
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_Driver\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar E:\Own_Project\Web_Driver\lib\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57105 -d E:\Own_Project\Web_Driver\test-output E:\Own_Project\Web_Driver\testng.xml
+java -ea -classpath E:\Own_Project\Web_Driver\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar:E:\Own_Project\Web_Driver\lib\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 57105 -d E:\Own_Project\Web_Driver\test-output E:\Own_Project\Web_Driver\testng.xml
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 18 2015-08-31 19:15:19.947
+!MESSAGE Updating the index from remote failed. Version: 1.0.0.v20150617-0732
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.getEtag(ProblemsDatabaseUpdateJob.java:95)
+	at org.eclipse.epp.internal.logging.aeri.ui.log.ProblemsDatabaseUpdateJob.run(ProblemsDatabaseUpdateJob.java:58)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+
+!ENTRY org.eclipse.epp.logging.aeri.ui 2 6 2015-08-31 19:15:19.948
+!MESSAGE Failed to determine ETAG for remote problems database. Stopping update. Version: 1.0.0.v20150617-0732
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:15:34.836
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_Driver\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar E:\Own_Project\Web_Driver\lib\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57486 -d E:\Own_Project\Web_Driver\test-output E:\Own_Project\Web_Driver\testng.xml
+java -ea -classpath E:\Own_Project\Web_Driver\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_Driver\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar:E:\Own_Project\Web_Driver\lib\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 57486 -d E:\Own_Project\Web_Driver\test-output E:\Own_Project\Web_Driver\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:20:39.655
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web1\bin
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 57933 -d E:\Own_Project\Web1\test-output E:\Own_Project\Web1\Web_Driver\testng.xml
+java -ea -classpath E:\Own_Project\Web1\bin org.testng.remote.RemoteTestNG -serport 57933 -d E:\Own_Project\Web1\test-output E:\Own_Project\Web1\Web_Driver\testng.xml
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2015-08-31 19:26:34.192
+!MESSAGE Failed to download org.eclipse.recommenders:index::zip:0.0.0
+!STACK 0
+org.eclipse.aether.resolution.ArtifactResolutionException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/mars/): Proxy Authentication Required ( Forefront TMG requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) (407)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:444)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifacts(DefaultArtifactResolver.java:246)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolveArtifact(DefaultArtifactResolver.java:223)
+	at org.eclipse.aether.internal.impl.DefaultRepositorySystem.resolveArtifact(DefaultRepositorySystem.java:294)
+	at org.eclipse.recommenders.models.ModelRepository.resolveInternal(ModelRepository.java:190)
+	at org.eclipse.recommenders.models.ModelRepository.resolve(ModelRepository.java:172)
+	at org.eclipse.recommenders.internal.models.rcp.EclipseModelRepository.resolve(EclipseModelRepository.java:167)
+	at org.eclipse.recommenders.internal.models.rcp.DownloadModelArchiveJob.run(DownloadModelArchiveJob.java:76)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+Caused by: org.eclipse.aether.transfer.ArtifactTransferException: Could not transfer artifact org.eclipse.recommenders:index:zip:0.0.0-SNAPSHOT from/to models (http://download.eclipse.org/recommenders/models/mars/): Proxy Authentication Required ( Forefront TMG requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) (407)
+	at org.eclipse.aether.connector.basic.ArtifactTransportListener.transferFailed(ArtifactTransportListener.java:43)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:355)
+	at org.eclipse.aether.util.concurrency.RunnableErrorForwarder$1.run(RunnableErrorForwarder.java:67)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$DirectExecutor.execute(BasicRepositoryConnector.java:581)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector.get(BasicRepositoryConnector.java:249)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.performDownloads(DefaultArtifactResolver.java:520)
+	at org.eclipse.aether.internal.impl.DefaultArtifactResolver.resolve(DefaultArtifactResolver.java:421)
+	... 8 more
+Caused by: org.apache.http.client.HttpResponseException: Proxy Authentication Required ( Forefront TMG requires authorization to fulfill the request. Access to the Web Proxy filter is denied.  ) (407)
+	at org.eclipse.aether.transport.http.HttpTransporter.handleStatus(HttpTransporter.java:466)
+	at org.eclipse.aether.transport.http.HttpTransporter.execute(HttpTransporter.java:291)
+	at org.eclipse.aether.transport.http.HttpTransporter.implGet(HttpTransporter.java:243)
+	at org.eclipse.aether.spi.connector.transport.AbstractTransporter.get(AbstractTransporter.java:59)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$GetTaskRunner.runTask(BasicRepositoryConnector.java:447)
+	at org.eclipse.aether.connector.basic.BasicRepositoryConnector$TaskRunner.run(BasicRepositoryConnector.java:350)
+	... 13 more
+
+!ENTRY org.eclipse.recommenders.models.rcp 1 0 2015-08-31 19:26:34.194
+!MESSAGE org.eclipse.recommenders:index::zip:0.0.0 could not be resolved from the model repositories. Are you offline?
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:27:16.360
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_new\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58197 -d E:\Own_Project\Web_new\test-output E:\Own_Project\Web_new\testng.xml
+java -ea -classpath E:\Own_Project\Web_new\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar:E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1.jar org.testng.remote.RemoteTestNG -serport 58197 -d E:\Own_Project\Web_new\test-output E:\Own_Project\Web_new\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:38:01.809
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58576 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 58576 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+
+!ENTRY org.eclipse.recommenders.subwords.rcp 4 1 2015-08-31 19:38:18.090
+!MESSAGE Exception during code completion
+!STACK 0
+org.eclipse.core.runtime.OperationCanceledException
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.checkCancel(CompletionEngine.java:1683)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.acceptType(CompletionEngine.java:1181)
+	at org.eclipse.jdt.internal.core.SearchableEnvironmentRequestor.acceptType(SearchableEnvironmentRequestor.java:115)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypesInBinaryPackage(NameLookup.java:1085)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:1019)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:962)
+	at org.eclipse.jdt.internal.core.NameLookup.findAllTypes(NameLookup.java:328)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:995)
+	at org.eclipse.jdt.internal.core.NameLookup.seekTypes(NameLookup.java:962)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:641)
+	at org.eclipse.jdt.internal.core.SearchableEnvironment.findTypes(SearchableEnvironment.java:455)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.findTypesAndPackages(CompletionEngine.java:10686)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.completionOnMarkerAnnotationName(CompletionEngine.java:2551)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:1743)
+	at org.eclipse.jdt.internal.codeassist.CompletionEngine.complete(CompletionEngine.java:1939)
+	at org.eclipse.jdt.internal.core.Openable.codeComplete(Openable.java:131)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:357)
+	at org.eclipse.jdt.internal.core.CompilationUnit.codeComplete(CompilationUnit.java:345)
+	at org.eclipse.recommenders.internal.subwords.rcp.SubwordsSessionProcessor.computeProposals(SubwordsSessionProcessor.java:306)
+	at org.eclipse.recommenders.internal.subwords.rcp.SubwordsSessionProcessor.getNewProposals(SubwordsSessionProcessor.java:196)
+	at org.eclipse.recommenders.internal.subwords.rcp.SubwordsSessionProcessor.initializeContext(SubwordsSessionProcessor.java:141)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.fireInitializeContext(IntelligentCompletionProposalComputer.java:243)
+	at org.eclipse.recommenders.completion.rcp.processable.IntelligentCompletionProposalComputer.computeCompletionProposals(IntelligentCompletionProposalComputer.java:135)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalComputerDescriptor.computeCompletionProposals(CompletionProposalComputerDescriptor.java:333)
+	at org.eclipse.jdt.internal.ui.text.java.CompletionProposalCategory.computeCompletionProposals(CompletionProposalCategory.java:337)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.collectProposals(ContentAssistProcessor.java:322)
+	at org.eclipse.jdt.internal.ui.text.java.ContentAssistProcessor.computeCompletionProposals(ContentAssistProcessor.java:279)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$5.run(ContentAssistant.java:1904)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.computeCompletionProposals(ContentAssistant.java:1902)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.computeProposals(CompletionProposalPopup.java:573)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.access$16(CompletionProposalPopup.java:570)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup$2.run(CompletionProposalPopup.java:505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.showProposals(CompletionProposalPopup.java:499)
+	at org.eclipse.jface.text.contentassist.ContentAssistant.showPossibleCompletions(ContentAssistant.java:1720)
+	at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor$AdaptedSourceViewer.doOperation(CompilationUnitEditor.java:180)
+	at org.eclipse.ui.texteditor.ContentAssistAction$1.run(ContentAssistAction.java:82)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:70)
+	at org.eclipse.ui.texteditor.ContentAssistAction.run(ContentAssistAction.java:80)
+	at org.eclipse.jface.action.Action.runWithEvent(Action.java:473)
+	at org.eclipse.jface.commands.ActionHandler.execute(ActionHandler.java:122)
+	at org.eclipse.ui.internal.handlers.E4HandlerProxy.execute(E4HandlerProxy.java:90)
+	at sun.reflect.GeneratedMethodAccessor52.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.e4.core.internal.di.MethodRequestor.execute(MethodRequestor.java:56)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invokeUsingClass(InjectorImpl.java:252)
+	at org.eclipse.e4.core.internal.di.InjectorImpl.invoke(InjectorImpl.java:234)
+	at org.eclipse.e4.core.contexts.ContextInjectionFactory.invoke(ContextInjectionFactory.java:132)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceHandler.execute(HandlerServiceHandler.java:152)
+	at org.eclipse.core.commands.Command.executeWithChecks(Command.java:493)
+	at org.eclipse.core.commands.ParameterizedCommand.executeWithChecks(ParameterizedCommand.java:486)
+	at org.eclipse.e4.core.commands.internal.HandlerServiceImpl.executeHandler(HandlerServiceImpl.java:210)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.executeCommand(KeyBindingDispatcher.java:286)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.press(KeyBindingDispatcher.java:507)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.processKeyEvent(KeyBindingDispatcher.java:558)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.filterKeySequenceBindings(KeyBindingDispatcher.java:378)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher.access$0(KeyBindingDispatcher.java:324)
+	at org.eclipse.e4.ui.bindings.keys.KeyBindingDispatcher$KeyDownFilter.handleEvent(KeyBindingDispatcher.java:86)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.filterEvent(Display.java:1266)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1112)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1137)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1122)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1164)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1160)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1581)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4781)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:343)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4662)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:339)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5050)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2549)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3767)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.jdt.ui 2 0 2015-08-31 19:38:18.093
+!MESSAGE The 'org.eclipse.recommenders.completion.rcp.javaCompletionProposalComputer.intelligent' proposal computer from the 'org.eclipse.recommenders.completion.rcp' plug-in did not complete normally. The extension took too long to return from the 'computeCompletionProposals()' operation.
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:38:56.227
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58583 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 58583 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:39:41.681
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58700 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 58700 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:41:08.871
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] Test1.java [in test [in src [in Web_new]]]
+  package test
+  import org.openqa.selenium.By
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.Assert
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class Test1
+    WebDriver driver
+    void CreateWebDriver()
+    void test1()
+    void test2()
+    void test3()
+    void WebPageClickLink(String)
+    void After()
+    void Login(String, String)
+    void VerifyTitle(String)
+    void OpenWebPage(String)
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:41:09.129
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_new\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58824 -d E:\Own_Project\Web_new\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1090437418\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_new\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar:E:\Own_Project\Web_new\lib\selenium-2.47.1\selenium-java-2.47.1.jar org.testng.remote.RemoteTestNG -serport 58824 -d E:\Own_Project\Web_new\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1090437418\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:43:22.895
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] Test1.java [in test [in src [in Web_new]]]
+  package test
+  import org.openqa.selenium.By
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.Assert
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class Test1
+    WebDriver driver
+    void CreateWebDriver()
+    void test1()
+    void test2()
+    void test3()
+    void WebPageClickLink(String)
+    void After()
+    void Login(String, String)
+    void VerifyTitle(String)
+    void OpenWebPage(String)
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:43:23.016
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_new\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58841 -d E:\Own_Project\Web_new\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-69096010\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_new\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar org.testng.remote.RemoteTestNG -serport 58841 -d E:\Own_Project\Web_new\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-69096010\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:45:54.882
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] Test1.java [in test [in src [in Web_2]]]
+  package test
+  import org.openqa.selenium.By
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.Assert
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class Test1
+    WebDriver driver
+    void CreateWebDriver()
+    void test1()
+    void test2()
+    void test3()
+    void WebPageClickLink(String)
+    void After()
+    void Login(String, String)
+    void VerifyTitle(String)
+    void OpenWebPage(String)
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:45:54.999
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58859 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--1333097548\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 58859 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--1333097548\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:46:17.516
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58976 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1301708892\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 58976 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1301708892\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:46:28.507
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 58978 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 58978 -d E:\Own_Project\Web_2\test-output E:\Own_Project\Web_2\testng.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:49:17.882
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] test.java [in test [in src [in Web_2]]]
+  package test
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class test
+    void Before()
+    void Test()
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:49:17.947
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59114 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1425642366\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 59114 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1425642366\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:49:54.292
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] Test1.java [in test [in src [in Web_2]]]
+  package test
+  import org.openqa.selenium.By
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.Assert
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class Test1
+    WebDriver driver
+    void CreateWebDriver()
+    void test1()
+    void test2()
+    void test3()
+    void WebPageClickLink(String)
+    void After()
+    void Login(String, String)
+    void VerifyTitle(String)
+    void OpenWebPage(String)
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:49:54.416
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59116 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-400163954\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 59116 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-400163954\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:50:46.466
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] test.java [in test [in src [in Web_2]]]
+  package test
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class test
+    WebDriver driver
+    void Before()
+    void Test()
+    void CreateWebDriver()
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:50:46.575
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59127 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--2023491961\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 59127 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--2023491961\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:51:14.811
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] test.java [in test [in src [in Web_2]]]
+  package test
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class test
+    WebDriver driver
+    void Before()
+    void Test()
+    void CreateWebDriver()
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:51:14.922
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59130 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--1089675732\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 59130 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--1089675732\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:53:09.635
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] test.java [in test [in src [in Web_2]]]
+  package test
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class test
+    WebDriver driver
+    void Before()
+    void Test()
+    void CreateWebDriver()
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:53:09.758
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59263 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-9303400\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 59263 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-9303400\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:53:57.199
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] test.java [in test [in src [in Web_2]]]
+  package test
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class test
+    void Before()
+    void Test()
+    void CreateWebDriver()
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:53:57.340
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59267 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1599547225\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1.jar:E:\Own_Project\Web_2\lib\selenium-2.47.1\selenium-java-2.47.1-srcs.jar org.testng.remote.RemoteTestNG -serport 59267 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse-1599547225\testng-customsuite.xml
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:57:51.560
+!MESSAGE [TestNGLaunchShortcut] Examining Java element:[Working copy] Test1.java [in test [in src [in Web_2]]]
+  package test
+  import org.openqa.selenium.By
+  import org.openqa.selenium.WebDriver
+  import org.openqa.selenium.firefox.FirefoxDriver
+  import org.testng.Assert
+  import org.testng.annotations.AfterClass
+  import org.testng.annotations.BeforeTest
+  import org.testng.annotations.Test
+  class Test1
+    WebDriver driver
+    void CreateWebDriver()
+    void test1()
+    void test2()
+    void test3()
+    void WebPageClickLink(String)
+    void After()
+    void Login(String, String)
+    void VerifyTitle(String)
+    void OpenWebPage(String)
+
+!ENTRY org.testng.eclipse 1 0 2015-08-31 19:57:51.680
+!MESSAGE [TestNGLaunchConfigurationDelegate] Launching:
+  Classpath: E:\Own_Project\Web_2\bin C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar E:\Own_Project\Web_2\lib\selenium-java-2.47.1.zip E:\Own_Project\Web_2\lib\selenium-server-standalone-2.47.1.jar
+  VMArgs:    -ea
+  Class:     org.testng.remote.RemoteTestNG
+  Args:      -serport 59481 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--618396080\testng-customsuite.xml
+java -ea -classpath E:\Own_Project\Web_2\bin:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\testng.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\jcommander.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\bsh-2.0b4.jar:C:\eclipse-jee-mars-R-win32-x86_64\eclipse\plugins\org.testng.eclipse_6.9.5.201506120235\lib\snakeyaml.jar:E:\Own_Project\Web_2\lib\selenium-java-2.47.1.zip:E:\Own_Project\Web_2\lib\selenium-server-standalone-2.47.1.jar org.testng.remote.RemoteTestNG -serport 59481 -d E:\Own_Project\Web_2\test-output C:\Users\DOLEBE~1\AppData\Local\Temp\testng-eclipse--618396080\testng-customsuite.xml
