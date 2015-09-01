@@ -2,29 +2,43 @@ package test;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class PO {
 	public WebDriver driver;
-	@BeforeTest
+	@BeforeMethod
 	public void CreateWebDriver(){
 		driver = new FirefoxDriver() ;
 		
 		}
 	
-	@Test
+	@Test(enabled=false)
 	public void Test1(){
 		PDCLogiWebPage web=new PDCLogiWebPage(driver);
 		driver.get("https://10.35.204.56:24721");
 		web.init(driver);
 		web.Login("PDCAdmin", "p@ssw0rd");
-		web.CheckTitle("Phasor Point PD C");
-		
-				
+		web.CheckTitle("PhasorPoint PDC login");
 	}
-	@AfterTest
+		
+	@Test
+	public void Test2(){
+	PDCLogiWebPage web=new PDCLogiWebPage(driver);
+	driver.get("Https://10.35.204.56:24721");
+	web.init(driver);
+	web.Login("PDCAdmin", "p@ssw0rd");
+	PDCMainPage main=new PDCMainPage(driver);
+	main.init(driver);
+	main.ClickLogout();
+	main.CheckTitle("PhasorPoint PDC login");
+
+	}
+	
+	@AfterMethod
 	public void CloseWebDriver(){
 		driver.close(); 
 	}

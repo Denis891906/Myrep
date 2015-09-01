@@ -1,7 +1,26 @@
 <suite name="Suite Second" verbose="1" >
-	<test name="Login test to PDC">
+	<test name="Test 1">
 		<classes >
 			<class name="test.Test1"></class>
+				<methods>
+					<include name="test1" />
+				</methods>
+		</classes>
+	</test>
+	<test name="Test 2">
+		<classes >
+			<class name="test.Test1"></class>
+				<methods>
+					<include name="test2" />
+				</methods>
+		</classes>
+	</test>
+	<test name="Test 3">
+		<classes >
+			<class name="test.Test1"></class>
+				<methods>
+					<include name="test3" />
+				</methods>
 		</classes>
 	</test>
 </suite>
