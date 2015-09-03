@@ -1,0 +1,10 @@
+package test;
+
+import org.openqa.selenium.WebDriver;
+
+public class ChromeTest {
+	System.setProperty
+	
+	("webdriver.chrome.driver","E:\\")
+	WebDriver
+}

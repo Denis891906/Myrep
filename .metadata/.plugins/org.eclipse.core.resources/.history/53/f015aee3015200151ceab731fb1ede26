@@ -1,0 +1,8 @@
+package test;
+
+
+import org.openqa.selenium.support.events.WebDriverEventListener;
+
+public class TakeScreenShot() implements WebDriverEventListener {
+	
+}

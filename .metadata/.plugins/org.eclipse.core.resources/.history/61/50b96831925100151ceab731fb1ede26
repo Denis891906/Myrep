@@ -1,0 +1,9 @@
+package test;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ChromeTest {
+	System.setProperty("webdriver.chrome.driver","E:\\Own_Project\\Web_2\\lib\\chromedriver.exe")
+	WebDriver driver = new ChromeDriver();
+}

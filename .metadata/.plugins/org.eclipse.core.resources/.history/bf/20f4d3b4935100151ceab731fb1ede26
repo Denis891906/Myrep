@@ -1,0 +1,3 @@
+<suite name="Suite" verbose="e" parrallel="tests" thread-count="5">
+
+</suite>

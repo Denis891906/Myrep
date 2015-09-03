@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <test name="Default test(failed)">
+<suite verbose="3" name="Failed suite [Suite]">
+  <parameter name="browser" value="Chrome"/>
+  <test name="test on the ForeFox(failed)">
+    <parameter name="browser" value="FireFox"/>
     <classes>
-      <class name="test.PO">
+      <class name="test.ChromeTest">
         <methods>
-          <include name="CreateWebDriver"/>
-          <include name="Test2"/>
-          <include name="CloseWebDriver"/>
+          <include name="AfterTest"/>
+          <include name="AfterTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="PDCLogin"/>
         </methods>
-      </class> <!-- test.PO -->
+      </class> <!-- test.ChromeTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- test on the ForeFox(failed) -->
+  <test name="test on the Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="test.ChromeTest">
+        <methods>
+          <include name="AfterTest"/>
+          <include name="AfterTest"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="PDCLogin"/>
+        </methods>
+      </class> <!-- test.ChromeTest -->
+    </classes>
+  </test> <!-- test on the Chrome(failed) -->
+</suite> <!-- Failed suite [Suite] -->

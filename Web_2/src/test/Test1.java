@@ -37,7 +37,6 @@ public class Test1 {
 	public void test3(){
 		OpenWebPage("https://10.35.204.56:24721");
 		Login("pdcAdmin","p@ssw0rd");
-		PDCMainPage.
 		VerifyTitle("PhasorPoint PDC login");
 		
 	}

@@ -1,0 +1,9 @@
+package test;
+
+
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
+
+
+public class TakeScreenShot extends AbstractWebDriverEventListener {
+	
+}

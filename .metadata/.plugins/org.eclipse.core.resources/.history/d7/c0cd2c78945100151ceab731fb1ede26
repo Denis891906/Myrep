@@ -1,0 +1,14 @@
+<suite name="Suite" verbose="3" parrallel="tests" thread-count="5">
+	<test name="test on the ForeFox">
+		<parameter name="browser" value="FireFox" />
+		<classes >
+			<class name="test.ChromeTest"/>
+		</classes>
+	</test>
+	<test name="test on the Chrome">
+		<parameter name="browser" value="Chrome" />
+		<classes >
+			<class name="test.Chrome.Test"/>
+		</classes>
+	</test>  
+</suite>

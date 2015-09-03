@@ -1,0 +1,38 @@
+package test;
+
+
+import java.io.File;
+import java.sql.Driver;
+
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.support.events.AbstractWebDriverEventListener;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Test;
+
+import com.steadystate.css.util.Output;
+
+
+public class TakeScreenShot extends AbstractWebDriverEventListener {
+	public WebDriver driver;
+	
+	@BeforeTest
+	public void btest(){
+		driver = new FirefoxDriver();
+		driver.get("google.com");
+	}
+	@Test
+	public void Test1(){
+		File scrFile=((TakeScreenShot)driver).getScreenshotAs(OutputType.FILE);
+	}
+	
+	/*@Override
+	public void onException(Throwable throwable, WebDriver webdriver){
+		System.out.println("Caught Exception");
+		File scrFile=((TakeScreenShot)webdriver).ge
+		
+	}
+	*/
+}
+

@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="2" total="2" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="8714" started-at="2015-09-01T06:42:38Z" finished-at="2015-09-01T06:42:47Z">
+  <suite name="Suite" duration-ms="16053" started-at="2015-09-03T07:28:20Z" finished-at="2015-09-03T07:28:36Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="8714" started-at="2015-09-01T06:42:38Z" finished-at="2015-09-01T06:42:47Z">
-      <class name="test.PO">
-        <test-method status="PASS" signature="CreateWebDriver()[pri:0, instance:test.PO@224aed64]" name="CreateWebDriver" is-config="true" duration-ms="5576" started-at="2015-09-01T09:42:38Z" finished-at="2015-09-01T09:42:44Z">
+    <test name="test on the ForeFox" duration-ms="8896" started-at="2015-09-03T07:28:20Z" finished-at="2015-09-03T07:28:28Z">
+      <class name="test.ChromeTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:test.ChromeTest@387c703b]" name="setUp" is-config="true" duration-ms="5627" started-at="2015-09-03T10:28:20Z" finished-at="2015-09-03T10:28:25Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[FireFox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CreateWebDriver -->
-        <test-method status="FAIL" signature="Test2()[pri:0, instance:test.PO@224aed64]" name="Test2" duration-ms="3091" started-at="2015-09-01T09:42:44Z" finished-at="2015-09-01T09:42:47Z">
-          <exception class="java.lang.NullPointerException">
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="PDCLogin()[pri:0, instance:test.ChromeTest@387c703b]" name="PDCLogin" duration-ms="3229" started-at="2015-09-03T10:28:25Z" finished-at="2015-09-03T10:28:28Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [PhasorPoint PDC1] but found [PhasorPoint PDC]]]>
+            </message>
             <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at test.PDCMainPage.CheckTitle(PDCMainPage.java:29)
-	at test.PO.Test2(PO.java:37)
+              <![CDATA[java.lang.AssertionError: expected [PhasorPoint PDC1] but found [PhasorPoint PDC]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at test.PDCLogiWebPage.CheckTitle(PDCLogiWebPage.java:45)
+	at test.ChromeTest.PDCLogin(ChromeTest.java:31)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -43,15 +58,78 @@
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="CloseWebDriver()[pri:0, instance:test.PO@224aed64]" name="CloseWebDriver" is-config="true" duration-ms="20" started-at="2015-09-01T09:42:47Z" finished-at="2015-09-01T09:42:47Z">
+        </test-method> <!-- PDCLogin -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:test.ChromeTest@387c703b]" name="AfterTest" is-config="true" duration-ms="20" started-at="2015-09-03T10:28:28Z" finished-at="2015-09-03T10:28:28Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CloseWebDriver -->
-      </class> <!-- test.PO -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- AfterTest -->
+      </class> <!-- test.ChromeTest -->
+    </test> <!-- test on the ForeFox -->
+    <test name="test on the Chrome" duration-ms="7124" started-at="2015-09-03T07:28:28Z" finished-at="2015-09-03T07:28:36Z">
+      <class name="test.ChromeTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:test.ChromeTest@3ab39c39]" name="setUp" is-config="true" duration-ms="1455" started-at="2015-09-03T10:28:28Z" finished-at="2015-09-03T10:28:30Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="FAIL" signature="PDCLogin()[pri:0, instance:test.ChromeTest@3ab39c39]" name="PDCLogin" duration-ms="4010" started-at="2015-09-03T10:28:30Z" finished-at="2015-09-03T10:28:34Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [PhasorPoint PDC1] but found [PhasorPoint PDC]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [PhasorPoint PDC1] but found [PhasorPoint PDC]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:496)
+	at org.testng.Assert.assertEquals(Assert.java:125)
+	at org.testng.Assert.assertEquals(Assert.java:178)
+	at org.testng.Assert.assertEquals(Assert.java:188)
+	at test.PDCLogiWebPage.CheckTitle(PDCLogiWebPage.java:45)
+	at test.ChromeTest.PDCLogin(ChromeTest.java:31)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:85)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:648)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:834)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1142)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:124)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:108)
+	at org.testng.TestRunner.privateRun(TestRunner.java:771)
+	at org.testng.TestRunner.run(TestRunner.java:621)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:357)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:352)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:310)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:259)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1176)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1101)
+	at org.testng.TestNG.run(TestNG.java:1009)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PDCLogin -->
+        <test-method status="PASS" signature="AfterTest()[pri:0, instance:test.ChromeTest@3ab39c39]" name="AfterTest" is-config="true" duration-ms="1656" started-at="2015-09-03T10:28:34Z" finished-at="2015-09-03T10:28:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AfterTest -->
+      </class> <!-- test.ChromeTest -->
+    </test> <!-- test on the Chrome -->
+  </suite> <!-- Suite -->
 </testng-results>
